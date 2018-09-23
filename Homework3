@@ -1,0 +1,72 @@
+const f = function(a, b){
+        f1 = 2*a+1
+        f2 = 2*b
+        f3 = f1*f2
+        return(f3/b)
+};
+const fu = function(c, d){
+         return(c/d + 99)
+};
+const fun = function(){
+         console.log(fu(100, 100));
+};
+const func = function(e, f, g){
+	 if(e.length > f.length && e.length > f.length){
+           return console.log(e);
+	};
+	if(f.length > g.length && f.lenght > e.length){
+		return console.log(f);
+	};
+	if(g.length > f.length && g.length > e.length){
+		return console.log(g);
+	};
+};
+const funct = function(h, i){
+    if(h === i){
+      return console.log(0);
+    };
+    if(h > i){
+      return console.log(1);
+    };
+    if(h < i){
+       return console.log(-1);
+    };
+};
+const functi = function(x, y){
+        return(x*y);
+};
+const functio = function(x, y){
+	return(x/y);
+};
+const triangleArea = function(Base, Height){
+	return(functio(functi(Base, Height), 2))
+};
+const numlength = function(z){
+	return(z.length);
+};
+const ffunction = function(m, n, s){
+	if(m.length + "" + n.length > s){
+		return console.log(1);
+	}else{
+		return console.log(-1);
+	};
+};
+const runstuff = function(Base, Height, string){
+	if(string === "rectangle"){
+		return(Base*Height)
+	}else if(string === "triangle"){
+		return(triangleArea(Base, Height))
+	}else{
+		return(-1)
+	};
+};
+console.log(f(1, 2));
+fun(1);
+func("long", "longer", "longest");
+funct(1, 2);
+console.log(functi(2, 9));
+console.log(functio(100, 25));
+console.log(triangleArea(60, 3));
+console.log(numlength("something"));
+ffunction("hi", "hello", 24);
+console.log(runstuff(4, 5, "triangle"));
